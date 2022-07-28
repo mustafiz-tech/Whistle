@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+.nav-section {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.nav-section {
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar-brand img {
+  width: 100%;
+  display: block;
+}
+
+.nav-items {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  transition: all 300ms ease;
+}
+
+.nav-link:hover {
+  color: #0da1ff;
+}
+
+.fa-shopping-cart span {
+  padding: 3px 5px;
+  background-color: #0da1ff;
+  position: absolute;
+  top: 0;
+}
+
+.wrapper-section {
+  padding-top: 74px;
+}
+
+.slider-item {
+  min-height: 700px;
+  width: 100%;
+  background-image: url(../img/jpg/swim-bg.jpg);
+  background-size: cover;
+}
+
+.rugby {
+  background-image: url(../img/jpg/rugby.jpg);
+}
+
+.para-surf {
+  background-image: url(../img/jpg/para-surf.jpg);
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+.slick-dots li {
+  margin-left: 10px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.wrapper-header {
+  padding-top: 100px;
+}
+
+.main-category {
+  margin: 0;
+  padding: 0;
+}
+
+.sport-main {
+  padding: 0;
+  position: relative;
+}
+
+.sport-image {
+  width: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6509803922);
+  position: absolute;
+  top: 0;
+}
+
+.sport-icon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sport-icon a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: block;
+}
+
+.subscription {
+  padding: 80px 0;
+}
+
+.subscription-heading {
+  width: 100%;
+  background-image: url(../img/png/title-pattern.png);
+  margin-bottom: 60px;
+}
+.subscription-heading h2 {
+  background-color: #fff;
+  display: inline-block;
+  height: 100%;
+}
+.subscription-heading h2 span {
+  display: block;
+  font-size: 1rem;
+}
+
+.sub-list {
+  width: 31%;
+  border: 2px solid #ebebeb;
+}
+.sub-list img {
+  width: 100%;
+}
+
+.sub-middle {
+  width: 100%;
+  padding: 20px;
+}
+
+.sub-bottom {
+  border-top: 2px solid #ebebeb;
+  margin: 0;
+}
+
+.sub-last {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.sub-last p {
+  margin: 0;
+}
+.sub-last p span {
+  margin-right: 10px;
+}
+
+.days {
+  border-left: 2px solid #ebebeb;
+  border-right: 2px solid #ebebeb;
+}
+
+.bike-section {
+  width: 100%;
+  min-height: 600px;
+  background-image: url(../img/jpg/bike_racing.jpg);
+}
+
+.rotate {
+  width: 70%;
+  min-height: 600px;
+  background-color: rgba(13, 161, 255, 0.9019607843);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
+  margin-left: auto;
+}
+
+.bike-main {
+  width: 60%;
+  height: 600px;
+  color: #fff;
+  margin-left: 250px;
+  padding: 100px 0;
+}
+.bike-main a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.small-div {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.col-lg-4 {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.bike-para {
+  margin: 10px 0;
+}
+
+.bike-anchor {
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  margin-right: 20px;
+}
+
+.ice-section {
+  padding: 100px 0;
+}
+.ice-image {
+  padding: 0;
+}
+.ice-image img {
+  width: 100%;
+}
+.ice-image .dollar {
+  bottom: 50px;
+}
+
+.ice-left {
+  margin-left: 45px;
+}
+
+.ice-details p {
+  margin: 0;
+}
+.ice-details h2 {
+  margin: 0;
+}
+.ice-details a {
+  text-decoration: none;
+  color: #0da1ff;
+  display: block;
+}
+.ice-details a span {
+  margin-right: 5px;
+}
+
+.ice-span {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  color: #fff;
+  padding: 2px 15px;
+  background-color: #0da1ff;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

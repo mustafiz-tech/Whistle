@@ -1,0 +1,46 @@
+.ice-section{
+    padding: 100px 0;
+    .row{
+    }
+}
+
+.ice-image{
+    padding: 0;
+    img{
+        width: 100%;
+    }
+    .dollar{
+        bottom: 50px;
+    }
+}
+
+.ice-left{
+    margin-left: 45px;
+}
+
+.ice-details{
+    p{
+        margin: 0;
+    }
+    h2{
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #0da1ff;
+        display: block;
+        span{
+            margin-right: 5px;
+        }
+    }
+}
+
+.ice-span{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: #fff;
+    padding: 2px 15px;
+    background-color: #0da1ff;
+    font-weight: 600;
+}

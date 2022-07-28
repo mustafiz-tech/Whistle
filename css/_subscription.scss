@@ -1,0 +1,52 @@
+
+.subscription{
+    padding: 80px 0;
+}
+
+
+.subscription-heading{
+    width: 100%;
+    background-image: url(../img/png/title-pattern.png);
+    margin-bottom: 60px;
+    h2{
+        background-color: #fff;
+        display: inline-block;
+        height: 100%;
+        span{
+            display: block;
+            font-size: 1rem;
+        }
+    }
+}
+
+.sub-list{
+    width: 31%;
+    border: 2px solid #ebebeb;
+    img{
+        width: 100%;
+    }
+}
+
+.sub-middle{
+    width: 100%;
+    padding: 20px;
+}
+.sub-bottom{
+    border-top: 2px solid #ebebeb;
+    margin: 0;
+}
+.sub-last{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    p{
+        margin: 0;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+.days{
+    border-left: 2px solid #ebebeb;
+    border-right: 2px solid #ebebeb;
+}

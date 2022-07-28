@@ -1,0 +1,41 @@
+
+
+.main-category{
+    margin: 0;
+    padding: 0;
+}
+.sport-main{
+    padding: 0;
+    position: relative;
+}
+.sport-image{
+    width: 100%;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #000000a6;
+    position: absolute;
+    top: 0;
+}
+
+.sport-icon{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a{
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+    }
+}

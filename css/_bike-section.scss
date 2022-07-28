@@ -1,0 +1,42 @@
+.bike-section{
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/jpg/bike_racing.jpg);
+}
+.rotate{
+    width: 70%;
+    min-height: 600px;
+    background-color: #0da1ffe6;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
+    margin-left: auto;
+}
+
+.bike-main{
+    width: 60%;
+    height: 600px;
+    color: #fff;
+    margin-left: 250px;
+    padding: 100px 0;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.small-div{
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+.col-lg-4{
+    padding: 0;
+    margin-bottom: 40px;
+}
+.bike-para{
+    margin: 10px 0;
+}
+.bike-anchor{
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    margin-right: 20px;
+}

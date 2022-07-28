@@ -1,0 +1,35 @@
+.nav-section{
+    background-color: #000000bd;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 999;
+    @extend %fontExtend;
+}
+.navbar-brand{
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+.nav-items{
+    margin-left: 10px;
+}
+.nav-link{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: all 300ms ease;
+}
+.nav-link:hover{
+    color: #0da1ff;
+}
+.fa-shopping-cart{
+    span{
+        padding: 3px 5px;
+        background-color: #0da1ff;
+        position: absolute;
+        top: 0;
+    }
+}
