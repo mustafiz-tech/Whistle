@@ -1,0 +1,30 @@
+.footer{
+    padding: 10px 0;
+    a{
+        color: #4d4d4d;
+        text-decoration: none;
+    }
+    .container{
+       display: flex; 
+       justify-content: space-between;
+       p{
+        margin: 0;
+       }
+       ul{
+        margin: 0;
+        li{
+            padding: 0 5px;
+            border-right: 1px solid #e7e7e7;
+            a{
+                display: block;
+            }
+           }
+        }
+        p{
+            font-size: 0.9rem;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+}

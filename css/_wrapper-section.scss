@@ -1,46 +1,46 @@
 
 .wrapper-section{
     padding-top: 74px;
-}
-
-
-.slider-item{
-    min-height:700px;
-    width: 100%;
-    background-image: url(../img/jpg/swim-bg.jpg);
-    background-size: cover;
-
-}
-.rugby{
-    background-image: url(../img/jpg/rugby.jpg);
-}
-.para-surf{
-    background-image: url(../img/jpg/para-surf.jpg);
-}
-
-.slick-arrow{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-.slick-dots{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    li{
-        margin-left: 10px;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        border: none;
-        background-color: #fff;
-        font-size: 0;
+    .wrapper-slider{
+        min-height:600px;
+        width: 100%;
+        background-image: url(../img/jpg/swim-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .rugby{
+        background-image: url(../img/jpg/rugby.jpg);
+    }
+    .para-surf{
+        background-image: url(../img/jpg/para-surf.jpg);
+    }
+    
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .slick-dots{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        li{
+            margin-left: 10px;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: #fff;
+            font-size: 0;
+        }
+    }
+    
+    .wrapper-header{
+        padding-top: 100px;
     }
 }
 
-.wrapper-header{
-    padding-top: 100px;
-}

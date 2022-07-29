@@ -1,0 +1,93 @@
+.contact{
+    padding: 50px 0;
+    background-color: #2D2D2D;
+    color: #fff;
+    a{
+        text-decoration: none;
+        display: block;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    ul{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}
+
+.contact-logo{
+    p{
+        margin: 30px 0;
+        line-height: 25px;
+    }
+}
+
+.contact-icon{
+    display: flex;
+    .icons{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        background-color: #3c3c3c;
+        a{
+            color: #fff;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+.useful{
+    a{
+        color: #fff;
+    }
+}
+li{
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f4f42e;
+    a{
+        color: #fff;
+        font-size: 0.9rem;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+.last-li{
+    border: none;
+}
+
+
+.latest{
+    .image-or-details{
+        display: flex;
+        margin-top: 30px;
+        a{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 500;margin-bottom: 7px;
+        }
+        img{
+            margin-right: 15px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+
+.about-whistle{
+    li{
+        display: flex;
+        justify-content: space-between;
+    }
+    p{
+        margin: 0;
+    }
+}

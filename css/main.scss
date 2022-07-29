@@ -20,7 +20,9 @@ html{
 
 // common classes
 
-
+li{
+    list-style: none
+}
 
 // import
 @import "nav-section";
@@ -28,4 +30,10 @@ html{
 @import "sport-category";
 @import "subscription";
 @import "bike-section";
-@import "ice-section"
+@import "ice-section";
+@import "testominal";
+@import "gallery";
+@import "question-section";
+@import "clients";
+@import "contact";
+@import "footer";
