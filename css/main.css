@@ -8,8 +8,18 @@ html {
   font-size: 15px;
 }
 
-.nav-section {
+.ice-section .ice-left .ice-details a, .sub-list h3, .subscription-heading h2, .wrapper-section, .nav-section {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.ice-section, .subscription P, .wrapper-section p {
+  font-family: "Raleway", sans-serif;
+}
+
+.small-div {
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
 }
 
 li {
@@ -23,29 +33,24 @@ li {
   position: fixed;
   z-index: 999;
 }
-
-.navbar-brand img {
+.nav-section .navbar-brand img {
   width: 100%;
   display: block;
 }
-
-.nav-items {
+.nav-section .nav-items {
   margin-left: 10px;
 }
-
-.nav-link {
+.nav-section .nav-link {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.8rem;
   transition: all 300ms ease;
 }
-
-.nav-link:hover {
+.nav-section .nav-link:hover {
   color: #0da1ff;
 }
-
-.fa-shopping-cart span {
+.nav-section .fa-shopping-cart span {
   padding: 3px 5px;
   background-color: #0da1ff;
   position: absolute;
@@ -56,17 +61,110 @@ li {
   padding-top: 74px;
 }
 .wrapper-section .wrapper-slider {
-  min-height: 600px;
+  min-height: 700px;
   width: 100%;
   background-image: url(../img/jpg/swim-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
+.wrapper-section h2 {
+  text-transform: uppercase;
+}
+.wrapper-section h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.wrapper-section p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 30px;
+}
+.wrapper-section .wrapper-header {
+  padding-top: 100px;
+}
+.wrapper-section .swimming .swimming-head {
+  padding-top: 50px;
+}
+.wrapper-section .swimming h2 {
+  background-color: #fff;
+  letter-spacing: 10px;
+  word-spacing: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px 43px;
+  display: inline-block;
+}
+.wrapper-section .swimming h1 {
+  font-size: 6rem;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #0088de;
+}
+.wrapper-section .swimming h1 .the {
+  color: #fff;
+}
+.wrapper-section .swimming h1 .adrenalin {
+  font-size: 4.5rem;
+  color: #000;
+}
+.wrapper-section .swimming h1 .small-div {
+  background-color: #000;
+  height: 5px;
+  width: 50px;
+  margin-top: 5px;
+}
 .wrapper-section .rugby {
   background-image: url(../img/jpg/rugby.jpg);
+  background-repeat: no-repeat;
+  min-height: 700px;
+  color: #fff;
+}
+.wrapper-section .rugby .rugby-heading {
+  padding-top: 160px;
+}
+.wrapper-section .rugby .rugby-heading h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.wrapper-section .rugby .rugby-heading h1 {
+  line-height: 70px;
+  font-size: 4.5rem;
+}
+.wrapper-section .rugby .rugby-heading span {
+  font-weight: 600;
 }
 .wrapper-section .para-surf {
   background-image: url(../img/jpg/para-surf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  color: #000;
+}
+.wrapper-section .para-surf .para-surf-heading {
+  padding-top: 100px;
+}
+.wrapper-section .para-surf .para-surf-heading h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+.wrapper-section .para-surf .para-surf-heading h1 {
+  line-height: 70px;
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0;
+}
+.wrapper-section .para-surf .para-surf-heading .small-div {
+  background-color: #000;
+  height: 5px;
+  width: 60px;
+  margin-bottom: 30px;
+}
+.wrapper-section .para-surf .para-surf-heading p {
+  padding-right: 100px;
 }
 .wrapper-section .slick-arrow {
   position: absolute;
@@ -90,9 +188,6 @@ li {
   background-color: #fff;
   font-size: 0;
 }
-.wrapper-section .wrapper-header {
-  padding-top: 100px;
-}
 
 .main-category {
   margin: 0;
@@ -108,14 +203,6 @@ li {
   width: 100%;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6509803922);
-  position: absolute;
-  top: 0;
-}
-
 .sport-icon {
   height: 100%;
   width: 100%;
@@ -126,6 +213,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.74);
+  overflow: hidden;
 }
 .sport-icon a {
   text-transform: uppercase;
@@ -134,33 +223,76 @@ li {
   font-size: 1.2rem;
   text-decoration: none;
   display: block;
+  margin-top: 40px;
+  position: relative;
+  top: -20px;
+}
+.sport-icon img {
+  transition: all 500ms ease 0s;
+}
+
+.sport-icon:hover {
+  background: none;
+}
+.sport-icon:hover img {
+  transform: translatey(-200px);
+}
+.sport-icon:hover a {
+  transform: translatey(50px);
 }
 
 .subscription {
   padding: 80px 0;
 }
-
 .subscription-heading {
   width: 100%;
   background-image: url(../img/png/title-pattern.png);
   margin-bottom: 60px;
+  color: #060606;
 }
 .subscription-heading h2 {
   background-color: #fff;
   display: inline-block;
   height: 100%;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-weight: 700;
+  padding: 0 10px;
 }
 .subscription-heading h2 span {
   display: block;
   font-size: 1rem;
+  font-weight: 100;
 }
 
 .sub-list {
   width: 31%;
   border: 2px solid #ebebeb;
+  color: #4d4d4d;
+  transition: all 500ms ease;
+}
+.sub-list h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.sub-list P {
+  font-weight: 400;
 }
 .sub-list img {
   width: 100%;
+}
+
+.sub-list:hover {
+  border: 2px solid #000;
+}
+.sub-list:hover .days {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.sub-list:hover .sub-bottom {
+  border-top: 2px solid #000;
 }
 
 .sub-middle {
@@ -170,7 +302,12 @@ li {
 
 .sub-bottom {
   border-top: 2px solid #ebebeb;
+  transition: all 500ms ease;
   margin: 0;
+}
+.sub-bottom p {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .sub-last {
@@ -188,6 +325,7 @@ li {
 .days {
   border-left: 2px solid #ebebeb;
   border-right: 2px solid #ebebeb;
+  transition: all 500ms ease;
 }
 
 .bike-section {
@@ -215,70 +353,151 @@ li {
 .bike-main a {
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-
-.small-div {
-  width: 50px;
-  height: 2px;
+.bike-main .icon {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
+  border: 2px solid #fff;
+  transition: all 700ms ease;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
-
-.col-lg-4 {
+.bike-main .icon i {
+  color: #000;
+  transition: all 700ms ease;
+}
+.bike-main .bike-col {
+  transition: all 700ms ease;
   padding: 0;
   margin-bottom: 40px;
 }
-
-.bike-para {
-  margin: 10px 0;
+.bike-main .bike-col:hover .icon {
+  background-color: #4d4d4d;
 }
-
-.bike-anchor {
-  padding: 10px 20px;
+.bike-main .bike-col:hover .icon i {
+  color: #fff;
+}
+.bike-main .bike-head h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.bike-main .bike-para p {
+  margin: 30px 0;
+  font-size: 1.3rem;
+  font-family: 300;
+  padding-right: 100px;
+}
+.bike-main .bike-para p span {
+  font-weight: 600;
+}
+.bike-main .bike-anchor {
+  padding: 12px 30px;
   border: 2px solid #fff;
   margin-right: 20px;
+  transition: all 400ms ease;
+}
+.bike-main .bike-anchor:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .ice-section {
   padding: 100px 0;
+  color: #4d4d4d;
 }
-
-.ice-image {
+.ice-section .ice-image {
   padding: 0;
 }
-.ice-image img {
+.ice-section .ice-image img {
   width: 100%;
 }
-.ice-image .dollar {
+.ice-section .ice-image .dollar {
   bottom: 50px;
 }
-
-.ice-left {
+.ice-section .ice-image .ice-image-bottom {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  color: #fff;
+}
+.ice-section .ice-image .ice-image-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.ice-section .ice-image .ice-image-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+.ice-section .ice-image .ice-image-bottom a span {
+  margin-right: 10px;
+}
+.ice-section .ice-image .ice-image-bottom h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.ice-section .ice-image .ice-image:hover h2 {
+  color: #fff;
+}
+.ice-section .hover-main:hover span {
+  right: 0;
+}
+.ice-section .hover-main:hover h2 {
+  color: #0da1ff;
+}
+.ice-section .ice-left {
   margin-left: 45px;
 }
-
-.ice-details p {
-  margin: 0;
+.ice-section .ice-left .left-images {
+  padding: 0;
+  margin-bottom: 40px;
 }
-.ice-details h2 {
-  margin: 0;
+.ice-section .ice-left .ice-details {
+  padding: 0 30px;
 }
-.ice-details a {
+.ice-section .ice-left .ice-details p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.ice-section .ice-left .ice-details h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 8px 0;
+  text-transform: uppercase;
+  transition: all 700ms ease;
+}
+.ice-section .ice-left .ice-details a {
   text-decoration: none;
   color: #0da1ff;
   display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 700ms ease;
 }
-.ice-details a span {
+.ice-section .ice-left .ice-details a span {
   margin-right: 5px;
 }
-
-.ice-span {
+.ice-section .ice-left .ice-details a:hover {
+  color: #9a9a9a;
+}
+.ice-section .ice-span {
   position: absolute;
-  right: 0;
+  right: -5px;
   bottom: 10px;
   color: #fff;
   padding: 2px 15px;
   background-color: #0da1ff;
   font-weight: 600;
+  transition: all 800ms ease;
 }
 
 .testominal {
@@ -516,16 +735,14 @@ ul {
   flex-direction: column;
   margin-top: 30px;
 }
-
-.contact-logo p {
+.contact .contact-logo p {
   margin: 30px 0;
   line-height: 25px;
 }
-
-.contact-icon {
+.contact .contact-icon {
   display: flex;
 }
-.contact-icon .icons {
+.contact .contact-icon .icons {
   height: 50px;
   width: 50px;
   display: flex;
@@ -534,54 +751,49 @@ ul {
   margin-right: 10px;
   background-color: #3c3c3c;
 }
-.contact-icon .icons a {
+.contact .contact-icon .icons a {
   color: #fff;
   font-size: 1.1rem;
 }
-
-.useful a {
+.contact .useful a {
   color: #fff;
 }
-
-li {
+.contact li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(244, 244, 244, 0.1803921569);
 }
-li a {
+.contact li a {
   color: #fff;
   font-size: 0.9rem;
 }
-li a span {
+.contact li a span {
   margin-right: 10px;
 }
-
-.last-li {
+.contact .last-li {
   border: none;
 }
-
-.latest .image-or-details {
+.contact .latest .image-or-details {
   display: flex;
   margin-top: 30px;
 }
-.latest .image-or-details a {
+.contact .latest .image-or-details a {
   color: #fff;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: 7px;
 }
-.latest .image-or-details img {
+.contact .latest .image-or-details img {
   margin-right: 15px;
 }
-.latest .image-or-details p {
+.contact .latest .image-or-details p {
   margin: 0;
 }
-
-.about-whistle li {
+.contact .about-whistle li {
   display: flex;
   justify-content: space-between;
 }
-.about-whistle p {
+.contact .about-whistle p {
   margin: 0;
 }
 

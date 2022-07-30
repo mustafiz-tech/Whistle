@@ -1,19 +1,118 @@
 
 .wrapper-section{
     padding-top: 74px;
+    @extend %fontExtend;
     .wrapper-slider{
-        min-height:600px;
+        min-height:700px;
         width: 100%;
         background-image: url(../img/jpg/swim-bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     
     }
+    h2{
+        text-transform: uppercase;
+    }
+    h1{
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+    p{
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 100;
+        line-height: 30px;
+        @extend %font2Extend;
+    }
+    .wrapper-header{
+        padding-top: 100px;
+    }
+
+    .swimming{
+
+        .swimming-head{
+            padding-top: 50px;
+        }
+        h2{
+            background-color: #fff;
+            letter-spacing: 10px;
+            word-spacing: 5px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 5px 43px;
+            display: inline-block;
+        }
+        h1{
+            font-size: 6rem;
+            line-height: 60px;
+            letter-spacing: 1px;
+            color: #0088de;
+            .the{
+                color: #fff;
+            }
+            .adrenalin{
+                font-size: 4.5rem;
+                color: #000;
+            }
+            .small-div{
+                background-color: #000;
+                height: 5px;
+                width: 50px;
+                margin-top: 5px;
+            }
+        }
+    }
     .rugby{
         background-image: url(../img/jpg/rugby.jpg);
+        background-repeat: no-repeat;
+        min-height: 700px;
+        color: #fff;
+        .rugby-heading{
+            padding-top: 160px;
+            h2{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            h1{
+                line-height: 70px;
+                font-size: 4.5rem;
+            }
+            span{
+                font-weight: 600;
+            }
+        }
     }
     .para-surf{
         background-image: url(../img/jpg/para-surf.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 700px;
+        color: #000;
+        .para-surf-heading{
+            padding-top: 100px;
+            h2{
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin: 0;
+            }
+            h1{
+                line-height: 70px;
+                font-size: 4rem;
+                font-weight: 800;
+                margin: 0;
+            }
+            .small-div{
+                background-color: #000;
+                height: 5px;
+                width: 60px;
+                margin-bottom: 30px;
+            }
+            p{
+                padding-right: 100px;
+            }
+        }
     }
     
     .slick-arrow{
@@ -39,8 +138,5 @@
         }
     }
     
-    .wrapper-header{
-        padding-top: 100px;
-    }
 }
 

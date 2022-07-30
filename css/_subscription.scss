@@ -1,6 +1,9 @@
 
 .subscription{
     padding: 80px 0;
+    P{
+        @extend %font2Extend
+    }
 }
 
 
@@ -8,13 +11,20 @@
     width: 100%;
     background-image: url(../img/png/title-pattern.png);
     margin-bottom: 60px;
+    color: #060606;
     h2{
         background-color: #fff;
         display: inline-block;
         height: 100%;
+        text-transform: uppercase;
+        @extend %fontExtend;
+        font-size: 2.7rem;
+        font-weight: 700;
+        padding: 0 10px;
         span{
             display: block;
             font-size: 1rem;
+            font-weight: 100;
         }
     }
 }
@@ -22,8 +32,30 @@
 .sub-list{
     width: 31%;
     border: 2px solid #ebebeb;
+    color: #4d4d4d;
+    transition: all 500ms ease;
+    h3{
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-top: 10px;
+        @extend %fontExtend;
+    }
+    P{
+        font-weight: 400;
+    }
     img{
         width: 100%;
+    }
+}
+.sub-list:hover{
+    border: 2px solid #000;
+    .days{
+        border-left: 2px solid #000;
+        border-right: 2px solid #000;
+    }
+    .sub-bottom{
+        border-top: 2px solid #000;
     }
 }
 
@@ -33,7 +65,12 @@
 }
 .sub-bottom{
     border-top: 2px solid #ebebeb;
+    transition: all 500ms ease;
     margin: 0;
+    p{
+        font-size: 0.9rem;
+        font-weight: 300;
+    }
 }
 .sub-last{
     display: flex;
@@ -49,4 +86,5 @@
 .days{
     border-left: 2px solid #ebebeb;
     border-right: 2px solid #ebebeb;
+    transition: all 500ms ease;
 }
