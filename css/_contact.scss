@@ -32,14 +32,18 @@
             align-items: center;
             margin-right: 10px;
             background-color: #3c3c3c;
+            transition: all 400ms ease ;
             a{
                 color: #fff;
                 font-size: 1.1rem;
             }
         }
+        .icons:hover{
+            background-color: #3c5b9b;
+        }
     }
     
-    
+  
     .useful{
         a{
             color: #fff;

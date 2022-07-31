@@ -34,12 +34,12 @@
                 margin: 10px 0;
             }
         }
-        .ice-image:hover{
-            h2{
-                color: #fff;
-            }
-        }
         
+    }
+    .ice-image:hover{
+        .ice-span{
+            right: 0;
+        }
     }
     .hover-main:hover{
         span{

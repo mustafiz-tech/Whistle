@@ -3,103 +3,131 @@
     .row{
         margin: 0;
     }
-}
-
-.gallery-mav{
-    ul{
-        justify-content: center;
-        li{
-            margin-right: 40px;
+                    
+    .gallery-nav{
+        ul{
+            justify-content: center;
+            li{
+                margin-right: 40px;
+                a{
+                    text-transform: uppercase;
+                    color: #999999;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    transition: all 300ms ease;
+                }
+                a:hover{
+                    color: #333;
+                }
+            }
         }
     }
-}
 
-.gallery-tab{
-    padding-left: 0;
-    img{
-        width: 100%;
-        display: block;
+    .tab-content{
+        margin-top: 60px;
     }
-}
+
+    .gallery-tab{
+        padding-left: 0;
+        img{
+            width: 100%;
+            display: block;
+            transition: all 300ms ease;
+        }
+        
+        .running-port{
+            height: 394px;
+            width: 461px;
+            object-fit: cover;
+        }
 
 
-.tab-content{
-    margin-top: 60px;
-}
+        .left-image{
+            position: relative;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 1000ms ease 0s;
+        }
+        .middle-image{
+            margin-bottom: 10px;
+            position: relative;
+            overflow: hidden;
+        }
 
-.running-port{
-    height: 394px;
-    width: 461px;
-    object-fit: cover;
-}
+        .right-image{
+            margin-bottom: 11px;
+            position: relative;
+            overflow: hidden;
+        }
 
 
-.left-image{
-    position: relative;
-}
+        .middile-icon{
+            margin: 0 10px;
+        }
 
-.image-overlay{
-    height: 100%;
-    width: 100%;
-    background-color: #0da1ffdb;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .overlay-icons{
-        height: 60px;
-        width: 60px;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a{
-            text-decoration: none;
+
+        .port-middle-image{
+            position: relative;
+            padding: 0;
+        }
+
+
+        .image-overlay{
+            height: 100%;
+            width: 100%;
+            background-color: #0da1ffdb;
+            position: absolute;
+            top: 0;
+            z-index: 2;
             color: #fff;
-            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 300ms ease 0s;
+            .overlay-icons{
+                height: 60px;
+                width: 60px;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.2rem;
+                }
+            }
+            .overlay-heading{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 30px;
+                left: 40px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+                .s-kid{
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+            }
         }
     }
-    .overlay-heading{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 30px;
-        left: 40px;
-        a{
-            text-decoration: none;
-            color: #fff;
+
+    .main-overlay:hover{
+        .image-overlay{
+            opacity: 100%;
         }
-        .s-kid{
-            text-transform: uppercase;
-            font-size: 1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
+        img{
+            transform: scale(1.1);
         }
     }
-}
 
 
-.middile-icon{
-    margin: 0 10px;
-}
-
-
-
-.middle-image{
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.right-image{
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.port-middle-image{
-    position: relative;
-    padding: 0;
 }
