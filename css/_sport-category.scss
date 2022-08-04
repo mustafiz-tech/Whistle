@@ -22,8 +22,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(0 0 0 / 74%);
+    background-color: rgba(0 0 0 / 74%);
     overflow: hidden;
+
     a{
         text-transform: uppercase;
         color: #fff;
@@ -33,7 +34,8 @@
         display: block;
         margin-top: 40px;
         position: relative;
-        top: -20px
+        top: -20px;
+        transition: all 500ms ease 0s;
     }
     img{
         transition: all 500ms ease 0s;

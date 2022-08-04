@@ -2,6 +2,10 @@
     width: 100%;
     min-height: 600px;
     background-image: url(../img/jpg/bike_racing.jpg);
+    position: relative;
+    .row{
+        margin: 0;
+    }
 }
 .rotate{
     width: 70%;
@@ -12,10 +16,9 @@
 }
 
 .bike-main{
-    width: 60%;
+    width: 70%;
     height: 600px;
     color: #fff;
-    margin-left: 250px;
     padding: 100px 0;
     a{
         color: #fff;
@@ -81,4 +84,13 @@
         color: #000;
     }
 
+}
+.bike-main::after{
+    contain: '';
+    height: 500px;
+    width: 100%;
+    background-color: #0da1ffe6;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -2,6 +2,7 @@
 .wrapper-section{
     padding-top: 74px;
     @extend %fontExtend;
+    position: relative;
     .wrapper-slider{
         min-height:700px;
         width: 100%;
@@ -114,12 +115,35 @@
             }
         }
     }
-    
-    .slick-arrow{
+    .left-arrows{
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
+        z-index: 99;
+        height: 60px;
+        width: 60px;
+        transform: translatey(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #efefee;
+        font-size: 2.5rem;
+        transition: all 400ms ease;
+        opacity: 0;
+    }
+    .right-arrows{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translatey(-50%);
+        height: 60px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #efefee;
+        font-size: 2.5rem;
+        transition: all 400ms ease;
+        opacity: 0;
     }
     .slick-dots{
         position: absolute;
@@ -128,15 +152,27 @@
         transform: translateY(-50%);
         display: flex;
         li{
-            margin-left: 10px;
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            border: none;
-            background-color: #fff;
-            font-size: 0;
+            list-style-type: none;
+            button{
+                margin-left: 10px;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                border: none;
+                background-color: #fff;
+                font-size: 0;
+            }
         }
     }
     
+}
+
+.wrapper-section:hover{
+    .left-arrows{
+        opacity: 100%;
+    }
+    .right-arrows{
+        opacity: 100%;
+    }
 }
 
