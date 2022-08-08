@@ -388,34 +388,26 @@ li {
   width: 100%;
   min-height: 600px;
   background-image: url(../img/jpg/bike_racing.jpg);
+  background-size: cover;
   position: relative;
 }
 .bike-section .row {
   margin: 0;
 }
-
-.rotate {
-  width: 70%;
-  min-height: 600px;
-  background-color: rgba(13, 161, 255, 0.9019607843);
-  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
-          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 15% 100%);
-  margin-left: auto;
-}
-
-.bike-main {
-  width: 70%;
-  height: 600px;
-  color: #fff;
+.bike-section .bike-main {
   padding: 100px 0;
+  min-height: 600px;
+  width: 70%;
+  color: #fff;
+  z-index: 99;
 }
-.bike-main a {
+.bike-section .bike-main a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
 }
-.bike-main .icon {
+.bike-section .bike-main .icon {
   height: 60px;
   width: 60px;
   display: flex;
@@ -427,53 +419,55 @@ li {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-.bike-main .icon i {
+.bike-section .bike-main .icon i {
   color: #000;
   transition: all 700ms ease;
 }
-.bike-main .bike-col {
+.bike-section .bike-main .bike-col {
   transition: all 700ms ease;
   padding: 0;
   margin-bottom: 40px;
 }
-.bike-main .bike-col:hover .icon {
+.bike-section .bike-main .bike-col:hover .icon {
   background-color: #4d4d4d;
 }
-.bike-main .bike-col:hover .icon i {
+.bike-section .bike-main .bike-col:hover .icon i {
   color: #fff;
 }
-.bike-main .bike-head h2 {
+.bike-section .bike-main .bike-head h2 {
   font-weight: 700;
   font-size: 1.8rem;
 }
-.bike-main .bike-para p {
+.bike-section .bike-main .bike-para p {
   margin: 30px 0;
   font-size: 1.3rem;
   font-family: 300;
   padding-right: 100px;
 }
-.bike-main .bike-para p span {
+.bike-section .bike-main .bike-para p span {
   font-weight: 600;
 }
-.bike-main .bike-anchor {
+.bike-section .bike-main .bike-anchor {
   padding: 12px 30px;
   border: 2px solid #fff;
   margin-right: 20px;
   transition: all 400ms ease;
 }
-.bike-main .bike-anchor:hover {
+.bike-section .bike-main .bike-anchor:hover {
   background-color: #fff;
   color: #000;
 }
-
-.bike-main::after {
-  contain: "";
-  height: 500px;
-  width: 100%;
+.bike-section .bike-main::before {
+  content: "";
+  min-height: 100%;
+  width: 115%;
   background-color: rgba(13, 161, 255, 0.9019607843);
+  -webkit-clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
   position: absolute;
   top: 0;
-  left: 0;
+  left: -15%;
+  z-index: 0;
 }
 
 .ice-section {
@@ -526,7 +520,6 @@ li {
 }
 .ice-section .ice-left .left-images {
   padding: 0;
-  margin-bottom: 40px;
 }
 .ice-section .ice-left .ice-details {
   padding: 0 30px;
@@ -557,6 +550,9 @@ li {
 }
 .ice-section .ice-left .ice-details a:hover {
   color: #9a9a9a;
+}
+.ice-section .ice-left .hover-main {
+  margin-bottom: 40px;
 }
 .ice-section .ice-span {
   position: absolute;
